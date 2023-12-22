@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "882019561880",
+    "project_id": "zebracrop-80af9",
+    "storage_bucket": "zebracrop-80af9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882019561880:android:4f7be7fb3a00b150db7bed",
+        "android_client_info": {
+          "package_name": "com.mycompany.zebracropbank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7-k-KnX0cPHrrf7lkij150bXhTipBiu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
