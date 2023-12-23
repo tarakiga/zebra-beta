@@ -1,6 +1,6 @@
 
-class NewCloudFunctionCloudFunctionCallResponse {
-  NewCloudFunctionCloudFunctionCallResponse({
+class CreateUserAndAddToFirestoreCloudFunctionCallResponse {
+  CreateUserAndAddToFirestoreCloudFunctionCallResponse({
     this.errorCode,
     this.succeeded,
     this.jsonBody,
