@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -96,7 +97,10 @@ class _DropdownMobileWidgetState extends State<DropdownMobileWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Jogn Doe',
+                            valueOrDefault<String>(
+                              currentUserDisplayName,
+                              'name',
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -108,7 +112,10 @@ class _DropdownMobileWidgetState extends State<DropdownMobileWidget> {
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 4.0, 0.0, 0.0),
                             child: Text(
-                              'johndoe@zebracropbank.com',
+                              valueOrDefault<String>(
+                                currentUserEmail,
+                                'email',
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(

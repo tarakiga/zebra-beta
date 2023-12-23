@@ -62,6 +62,7 @@ class _MobileheaderWidgetState extends State<MobileheaderWidget> {
               children: [
                 FlutterFlowIconButton(
                   borderRadius: 30.0,
+                  buttonSize: 50.0,
                   icon: Icon(
                     Icons.menu_rounded,
                     color: FlutterFlowTheme.of(context).secondaryBackground,

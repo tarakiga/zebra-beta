@@ -457,44 +457,6 @@ class _FeedWidgetState extends State<FeedWidget> {
                                                                     MainAxisSize
                                                                         .max,
                                                                 children: [
-                                                                  Theme(
-                                                                    data:
-                                                                        ThemeData(
-                                                                      checkboxTheme:
-                                                                          CheckboxThemeData(
-                                                                        visualDensity:
-                                                                            VisualDensity.compact,
-                                                                        materialTapTargetSize:
-                                                                            MaterialTapTargetSize.shrinkWrap,
-                                                                        shape:
-                                                                            RoundedRectangleBorder(
-                                                                          borderRadius:
-                                                                              BorderRadius.circular(4.0),
-                                                                        ),
-                                                                      ),
-                                                                      unselectedWidgetColor:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .secondaryText,
-                                                                    ),
-                                                                    child:
-                                                                        Checkbox(
-                                                                      value: _model
-                                                                              .checkboxValue ??=
-                                                                          true,
-                                                                      onChanged:
-                                                                          (newValue) async {
-                                                                        setState(() =>
-                                                                            _model.checkboxValue =
-                                                                                newValue!);
-                                                                      },
-                                                                      activeColor:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .primary,
-                                                                      checkColor:
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .info,
-                                                                    ),
-                                                                  ),
                                                                   Container(
                                                                     width: 35.0,
                                                                     height:

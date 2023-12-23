@@ -18,8 +18,6 @@ class FeedModel extends FlutterFlowModel<FeedWidget> {
   late HeaderModel headerModel;
   // Model for mobileheader component.
   late MobileheaderModel mobileheaderModel;
-  // State field(s) for Checkbox widget.
-  bool? checkboxValue;
 
   /// Initialization and disposal methods.
 
