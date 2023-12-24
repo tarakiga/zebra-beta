@@ -5,13 +5,12 @@ Future initFirebase() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
         options: const FirebaseOptions(
-            apiKey: "AIzaSyA00qvuQ_02ZpGHAbMPkFz4pDXCuxg4SG0",
-            authDomain: "zebracrop-80af9.firebaseapp.com",
-            projectId: "zebracrop-80af9",
-            storageBucket: "zebracrop-80af9.appspot.com",
-            messagingSenderId: "882019561880",
-            appId: "1:882019561880:web:71877e9e69f1a0d4db7bed",
-            measurementId: "G-9YBNT97S53"));
+            apiKey: "AIzaSyA0m20c-aRWfzXc9ihZLTEukuWxZaTzvnw",
+            authDomain: "zebra-crop-bank-beta-j13wod.firebaseapp.com",
+            projectId: "zebra-crop-bank-beta-j13wod",
+            storageBucket: "zebra-crop-bank-beta-j13wod.appspot.com",
+            messagingSenderId: "1009460205138",
+            appId: "1:1009460205138:web:85b274b02f410c18dff18b"));
   } else {
     await Firebase.initializeApp();
   }

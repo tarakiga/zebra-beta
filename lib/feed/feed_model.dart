@@ -1,3 +1,4 @@
+import '/backend/backend.dart';
 import '/components/header_widget.dart';
 import '/components/mobileheader_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -10,6 +11,8 @@ class FeedModel extends FlutterFlowModel<FeedWidget> {
   bool role = false;
 
   bool displayprod = false;
+
+  GoodsRecord? gooodsID;
 
   ///  State fields for stateful widgets in this page.
 
