@@ -50,6 +50,16 @@ class GoodsRecord extends FirestoreRecord {
   bool get status => _status ?? false;
   bool hasStatus() => _status != null;
 
+  // "image" field.
+  String? _image;
+  String get image => _image ?? '';
+  bool hasImage() => _image != null;
+
+  // "userID" field.
+  DocumentReference? _userID;
+  DocumentReference? get userID => _userID;
+  bool hasUserID() => _userID != null;
+
   void _initializeFields() {
     _name = snapshotData['name'] as String?;
     _description = snapshotData['description'] as String?;
@@ -58,6 +68,8 @@ class GoodsRecord extends FirestoreRecord {
     _location = snapshotData['location'] as String?;
     _price = castToType<int>(snapshotData['price']);
     _status = snapshotData['status'] as bool?;
+    _image = snapshotData['image'] as String?;
+    _userID = snapshotData['userID'] as DocumentReference?;
   }
 
   static CollectionReference get collection =>
@@ -101,6 +113,8 @@ Map<String, dynamic> createGoodsRecordData({
   String? location,
   int? price,
   bool? status,
+  String? image,
+  DocumentReference? userID,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -111,6 +125,8 @@ Map<String, dynamic> createGoodsRecordData({
       'location': location,
       'price': price,
       'status': status,
+      'image': image,
+      'userID': userID,
     }.withoutNulls,
   );
 
@@ -128,7 +144,9 @@ class GoodsRecordDocumentEquality implements Equality<GoodsRecord> {
         e1?.grade == e2?.grade &&
         e1?.location == e2?.location &&
         e1?.price == e2?.price &&
-        e1?.status == e2?.status;
+        e1?.status == e2?.status &&
+        e1?.image == e2?.image &&
+        e1?.userID == e2?.userID;
   }
 
   @override
@@ -139,7 +157,9 @@ class GoodsRecordDocumentEquality implements Equality<GoodsRecord> {
         e?.grade,
         e?.location,
         e?.price,
-        e?.status
+        e?.status,
+        e?.image,
+        e?.userID
       ]);
 
   @override

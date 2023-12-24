@@ -307,21 +307,23 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                         fontWeight: FontWeight.w500,
                                       ),
                                 )),
-                                SelectionArea(
-                                    child: Text(
-                                  valueOrDefault<String>(
-                                    currentUserDisplayName,
-                                    'name',
-                                  ),
-                                  style: FlutterFlowTheme.of(context)
-                                      .labelSmall
-                                      .override(
-                                        fontFamily: 'Outfit',
-                                        color: const Color(0xFF57636C),
-                                        fontSize: 12.0,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                )),
+                                AuthUserStreamWidget(
+                                  builder: (context) => SelectionArea(
+                                      child: Text(
+                                    valueOrDefault<String>(
+                                      currentUserDisplayName,
+                                      'name',
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .labelSmall
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: const Color(0xFF57636C),
+                                          fontSize: 12.0,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                  )),
+                                ),
                               ],
                             ),
                           Container(

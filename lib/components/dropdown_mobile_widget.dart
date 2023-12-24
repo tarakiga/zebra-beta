@@ -96,17 +96,19 @@ class _DropdownMobileWidgetState extends State<DropdownMobileWidget> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            valueOrDefault<String>(
-                              currentUserDisplayName,
-                              'name',
+                          AuthUserStreamWidget(
+                            builder: (context) => Text(
+                              valueOrDefault<String>(
+                                currentUserDisplayName,
+                                'name',
+                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: 'Readex Pro',
+                                    fontWeight: FontWeight.bold,
+                                  ),
                             ),
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  fontWeight: FontWeight.bold,
-                                ),
                           ),
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
